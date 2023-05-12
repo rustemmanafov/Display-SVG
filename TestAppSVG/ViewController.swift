@@ -26,7 +26,7 @@ class ViewController: UIViewController {
         view.addSubview(imageView)
         imageViewConstraints()
         
-        let svgUrl = URL(string: "https://token.sima.az/img/logos/sima_logo_footer.svg")!
+        let svgUrl = URL(string: "https://upload.wikimedia.org/wikipedia/commons/0/02/SVG_logo.svg")!
         let processor = SVGProcessor(size: CGSize(width: 200, height: 50))
         KingfisherManager.shared.retrieveImage(with: svgUrl, options: [.processor(processor), .forceRefresh]) {  result in
             switch (result){
